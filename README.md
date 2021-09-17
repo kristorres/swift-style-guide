@@ -17,8 +17,7 @@ Source Files
   * A file containing related declarations that are not scoped under a common
     type or namespace can be named descriptively.
 
-File Structure
---------------
+### File Structure
 
 Organize the material in each file as follows:
 
