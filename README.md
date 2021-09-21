@@ -6,7 +6,8 @@ Source Files
 
 ### Filenames
 
-  * All Swift source filenames end with the extension *.swift*.
+  * All Swift source filenames are `UpperCamelCase` and end with the extension
+    *.swift*.
   * If the file contains a single type `MyType`, then it is named
     *MyType.swift*.
   * If the file contains a single extension to a type `MyType` that adds
