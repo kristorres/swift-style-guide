@@ -7,19 +7,19 @@ Source Files
 ### Filenames
 
   * All Swift source filenames end with the extension *.swift*.
-  * A file containing a single type `MyType` is named *MyType.swift*. (It may
-    also contain some helper functions or extensions.)
-  * A file containing a single extension to a type `MyType` that adds
-    conformance to a protocol `MyProtocol` is named *MyType+MyProtocol.swift*.
-  * A file containing multiple extensions to a type `MyType` can be named more
-    generally, as long as it is prefixed with *MyType+*
+  * If the file contains a single type `MyType`, then it is named
+    *MyType.swift*.
+  * If the file contains a single extension to a type `MyType` that adds
+    conformance to a protocol `MyProtocol`, then it is named
+    *MyType+MyProtocol.swift*.
+  * If the file contains multiple extensions to a type `MyType`, then it is
+    named more generally, as long as it is prefixed with *MyType+*
     (e.g., *MyType+Additions.swift*).
-  * A file containing related declarations that are not scoped under a common
-    type or namespace can be named descriptively.
+  * All other files are named appropriately based on their contents.
 
 ### File Structure
 
-Organize the material in each file as follows:
+The content in a Swift source file is organized as follows:
 
   1. Import statements for native Apple libraries (in alphabetical order)
   2. Import statements for third-party libraries (in alphabetical order)
