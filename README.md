@@ -26,8 +26,9 @@ The content in a Swift source file is organized as follows:
   2. Import statements for third-party libraries (in alphabetical order)
   3. Types
       1. Structs
-      2. Classes
-      3. Enums
+      2. Enums
+      3. Classes
+      4. Actors
   4. Functions
   5. Extensions
 
@@ -44,8 +45,9 @@ Next, organize the members of a type as follows:
   7. Instance methods
   8. Nested types
       1. Structs
-      2. Classes
-      3. Enums
+      2. Enums
+      3. Classes
+      4. Actors
 
 For each section, list the public API first before the private API.
 **Exactly one blank line** separates each individual member.
