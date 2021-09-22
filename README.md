@@ -85,10 +85,19 @@ appear inside a string literal or comment.)
   * Empty blocks may be written as `{}`.
 
 ```swift
+// 🙂 CORRECT
 if conditionIsTrue {
     …
 }
 
+// 😡 WRONG
+if conditionIsTrue
+{
+    …
+}
+```
+
+```swift
 let closure = { (parameters) in
     …
 }
@@ -99,10 +108,18 @@ let closure = { (parameters) in
 Control flow keywords should always begin a line.
 
 ```swift
+// 🙂 CORRECT
 do {
     …
 }
 catch {
+    …
+}
+
+// 😡 WRONG
+do {
+    …
+} catch {
     …
 }
 ```
@@ -193,6 +210,7 @@ your naming!
     [Line Wrapping](#line-wrapping).
   * Function calls/signatures have no space in between the function name and the
     parentheses.
+  * Always wrap the parameters of a closure in parentheses.
   * Always group similar logical conditions with parentheses.
   * If the condition in the ternary operation `?:` uses a binary operator, then
     wrap it in parentheses.
@@ -207,8 +225,21 @@ if conditionIsTrue {
 if (conditionIsTrue) {
     …
 }
+```
 
+```swift
 // 🙂 CORRECT
+let closure = { (parameters) in
+    …
+}
+
+// 😡 WRONG
+let closure = { parameters in
+    …
+}
+```
+
+```swift
 let value = (
     (someValue + otherValue + anotherValue - adjustmentValue)
     / partCount
