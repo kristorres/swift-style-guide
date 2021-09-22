@@ -216,3 +216,9 @@ if (conditionIsTrue && relatedConditionIsTrue) || separateConditionIsTrue {
     …
 }
 ```
+
+### Comments
+
+  * Only documentation, `MARK:`, `TODO:`, and `FIXME:` comments are allowed.
+  * Documentation comments should conform to Apple’s official
+    [API design guidelines](https://swift.org/documentation/api-design-guidelines).
