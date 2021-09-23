@@ -263,3 +263,14 @@ if (conditionIsTrue && relatedConditionIsTrue) || separateConditionIsTrue {
   * Only documentation, `MARK:`, `TODO:`, and `FIXME:` comments are allowed.
   * Documentation comments should conform to Apple’s official
     [API design guidelines](https://swift.org/documentation/api-design-guidelines).
+
+Naming
+------
+
+  * Use `UpperCamelCase` for type names. All other naming is in
+    `lowerCamelCase`.
+  * Always give constants, variables, functions, types, et al. meaningful names
+    based on their contexts. Use context to communicate your code’s intention
+    more effectively.
+  * Naming should conform to Apple’s official
+    [API design guidelines](https://swift.org/documentation/api-design-guidelines).
