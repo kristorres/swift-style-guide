@@ -240,6 +240,14 @@ let closure = { parameters in
 ```
 
 ```swift
+// 🙂 CORRECT
+let result = (score > 90) ? "Pass" : "Fail"
+
+// 😡 WRONG
+let result = score > 90 ? "Pass" : "Fail"
+```
+
+```swift
 let value = (
     (someValue + otherValue + anotherValue - adjustmentValue)
     / partCount
