@@ -77,7 +77,7 @@ appear inside a string literal or comment.)
 
 ### Curly Braces
 
-  * Always use curly braces on flow control blocks, even when optional.
+  * Always use curly braces on control flow blocks, even when optional.
   * The opening brace is on the same line as the start of the block the braces
     wrap, separated by a space, if the line can fit. Otherwise, follow rule 6 in
     [Line Wrapping](#line-wrapping).
@@ -194,8 +194,8 @@ where
 
 A single blank line also appears in the following locations:
 
-  * Between parts of code with distinct purposes within the body of a flow
-    control block, function, computed property, or observed stored property.
+  * Between parts of code with distinct purposes within the body of a control
+    flow block, function, computed property, or observed stored property.
   * Before the first member of a type (*mandatory* if the member has a
     documentation comment, and *optional* if it does not).
 
@@ -205,8 +205,8 @@ your naming!
 
 ### Parentheses
 
-  * Do **NOT** wrap the entire condition of a control flow statement in
-    parentheses. If the line it is on does not fit, then follow rule 2 in
+  * Do **NOT** wrap the entire condition of a control flow block in parentheses.
+    If the line it is on does not fit, then follow rule 2 in
     [Line Wrapping](#line-wrapping).
   * Function calls/signatures have no space in between the function name and the
     parentheses.
