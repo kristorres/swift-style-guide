@@ -448,3 +448,15 @@ value, unless:
     `public` for public API.
   * If a top-level type, function, or extension needs to be private, use
     `fileprivate` instead of `private`.
+
+Other Rules
+-----------
+
+  * **The body of a function should have at most 30 lines.** Blank lines and
+    lines containing only braces are excluded in the count. This rule forces you
+    to extract complex pieces of logic into separate functions.
+  * **The use of magic numbers is strongly discouraged.** A magic number is a
+    numerical value that is not part of a constant declaration. (Any number
+    except 0, 1, or 2 is considered magic.) Only use a magic number if there is
+    a good enough reason to do so.
+  * **No global variables may be used.** Just avoid them at all costs!
