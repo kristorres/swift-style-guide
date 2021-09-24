@@ -301,7 +301,7 @@ Language Features
 ### Strings
 
   * String “concatenation” should be done using interpolation
-    (e.g., ``${head}${tail}``).
+    (e.g., `"\(head)\(tail)"`).
   * For long strings, use `Array`’s `joined(separator:)` method.
   * Do **NOT** use `"""` for multiline strings.
 
