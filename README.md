@@ -434,3 +434,15 @@ value, unless:
     // 😡 WRONG
     let translucentBlueCircle = Circle().foregroundColor(.blue.opacity(0.5))
     ```
+
+### Access Control
+
+  * If you are working on an iOS, iPadOS, macOS, watchOS, or tvOS app project,
+    the only access control keywords allowed are `private` and `fileprivate`.
+    Do **NOT** use `public`, since the default level of access control is
+    `internal`, and the latter is synonymous to the former in an app project.
+    A good rule of thumb is to default the API to be private until there is a
+    good enough reason to expose them to the public.
+  * If you are working on a third-party library, the only access control
+    keywords allowed are `private`, `fileprivate`, and `public`. Explicitly use
+    `public` for public API.
