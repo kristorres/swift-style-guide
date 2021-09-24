@@ -294,7 +294,7 @@ Language Features
   * Do **NOT** explicitly define an optional `nil` if its initial value is
     `nil`.
   * Do **NOT** use implicitly unwrapped optionals. Although they are assumed to
-    not be `nil`, they can still be `nil`! The only exception to this rule are
+    not be `nil`, they can still be `nil`! This rule does not apply to
     `@IBOutlet`s from UIKit.
   * Only use force unwrapping on optionals when **absolutely necessary**!
 
@@ -303,7 +303,7 @@ Language Features
   * String “concatenation” should be done using interpolation
     (e.g., ``${head}${tail}``).
   * For long strings, use `Array`’s `joined(separator:)` method.
-  * Do **NOT** use ````` for multiline strings.
+  * Do **NOT** use `"""` for multiline strings.
 
 ```swift
 let placeholder = [
@@ -392,8 +392,8 @@ let placeholder = [
   * Do **NOT** add type annotations to the parameters of a closure. Also, do
     **NOT** explicitly state the return type of a closure. Swift will
     automatically infer the types for you.
-  * If the closure is a one-liner, then use `$0`, `$1`, … instead of naming the
-    parameters.
+  * If the closure is a one-liner, then use `$0`, `$1`, etc. instead of naming
+    the parameters.
   * Use trailing closure syntax whenever possible.
 
 ```swift
@@ -419,7 +419,7 @@ braces.
 ### Type Inference for Enum Cases and Static Members
 
 Always omit the type name before the called enum case or static member in the
-value, except when:
+value, unless:
 
   * You are declaring a variable with no type annotation.
   * A property is accessed or a method is called on the value.
