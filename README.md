@@ -446,3 +446,5 @@ value, unless:
   * If you are working on a third-party library, the only access control
     keywords allowed are `private`, `fileprivate`, and `public`. Explicitly use
     `public` for public API.
+  * If a top-level type, function, or extension needs to be private, use
+    `fileprivate` instead of `private`.
