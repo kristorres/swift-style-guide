@@ -1,5 +1,13 @@
-Swift Style Guide
-=================
+KT Swift Style Guide
+====================
+
+<p>
+    <img src="https://img.shields.io/badge/Version-0.1.0-lightgrey.svg?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Swift-5.5-orange.svg?style=for-the-badge&logo=swift"/>
+    <a href="https://twitter.com/ohayoukris">
+        <img src="https://img.shields.io/badge/Contact-@ohayoukris-lightgrey.svg?style=for-the-badge&logo=twitter"/>
+    </a>
+</p>
 
 Source Files
 ------------
